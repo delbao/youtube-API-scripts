@@ -68,10 +68,10 @@ javascript:(function(){
     
     if(ytplayer===null)//If on a page that isn't youtube, ytplayer should be null, in which case:
     {
-        //The following function is never called in the code, but, if in the future, if you ever need to call, say, the "playVideo" function, you just need to call the following function:
+        //The following function is never called in the code, but, if in the future, you ever need to call, say, the "playVideo" function, you just need to call the following function:
         //iframe: the id given to the iframe
         //func: the function you'd like to run, for instance "playVideo", or "getCurrentTime" . Make sure to pass the argument as a string
-        //Some YoutubeIframeAPI functions take some arguments, which you will wnter here. This argument is optional 
+        //Some YoutubeIframeAPI functions take some arguments, which you will enter here. This argument is optional 
         function callPlayer(iframe, func, args){ //handles the case where an iframe is embedded on the page
             iframe=document.getElementById(iframe); //This returns the id of the iframe
             var event = "command"; //The way youtubeIframeAPI is setup, there are two types of functions, some are commands, like "playVideo", "pauseVideo" etc 
@@ -98,7 +98,22 @@ javascript:(function(){
                 clicked = 0;//set the flag back to 0
             }
         }
+    
+    //For instance, if you ever need to stop the video you can call:
+    //callPlayer('id_of_the_iframe', 'pauseVideo');
 
 }    
 })();
 
+
+// Once the button appears on your screen, and the video is playing, everytime you press the button,
+// it'll console.log the time. You do not need to pause and then press the button. As you press the button, 
+// the console will keep logging every time. Basically, if you have to record 100 timestamps in a video, 
+// just keep pressing the button(Without pausing) at every point you need the current time of.
+//  At the end, just open your console and you have the current time of the video for every time you pressed the button.
+
+//You can still pause the video and press the button, but keep in mind that it'll only get logged
+// once you resume the video. And there is nothing I can really do to change that.
+//Also, this only applies to an iFrames.
+//If it's a direct YouTube page, we have a lot more freedom and so in that case, you can pause the video
+//to press the button or just press it while the video is playing. Either way, there won't be any problems.
