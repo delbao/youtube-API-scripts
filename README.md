@@ -11,3 +11,6 @@ This function is not necessary in your particular case, where all you need is th
 
 # window.onmessage 
 THe callPlayer function is not called in the code because it isn't necessary for your getCurrentTime request. The youtubeAPI natively keeps sending the currentTime and the current State of the playback to the window object while the video is running, so we can just extract the current time from there.
+
+# File: app.js
+Older script which allows you to get the current time every time you pause the video. One major disadvantage of this over the final script is that, if the id of the div containing the iframe is anything other than 'widget2', you'll have to manually go into the go to change that, while that process is fairly autonomous in the final.js script.
