@@ -102,6 +102,8 @@ javascript:(function(){
     //For instance, if you ever need to stop the video you can call:
     //callPlayer('id_of_the_iframe', 'pauseVideo');
 
+    //You should write the above function right here0
+
 }    
 })();
 
