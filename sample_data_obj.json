@@ -1,0 +1,36 @@
+{
+    "event": "infoDelivery",
+    "info": {
+        "playerState": 2,
+        "currentTime": 187.019321,
+        "duration": 1877.401,
+        "videoData": {
+        "video_id": "i9-kl3J0",
+        "author": "baodepei1985",
+        "title": "<Redact>",
+        "video_quality": "medium",
+        "video_quality_features": []
+        },
+        "videoStartBytes": 0,
+        "videoBytesTotal": 1,
+        "videoLoadedFraction": 0.11185729633679752,
+        "playbackQuality": "medium",
+        "availableQualityLevels": [
+        "hd1080",
+        "hd720",
+        "large",
+        "medium",
+        "small",
+        "tiny",
+        "auto"
+        ],
+        "currentTimeLastUpdated_": 1633274507.398,
+        "playbackRate": 1,
+        "mediaReferenceTime": 187.019321,
+        "videoUrl": "https://www.youtube.com/watch?t=187&v=i9-kl3J0",
+        "playlist": null,
+        "playlistIndex": -1
+    },
+    "id": 1,
+    "channel": "widget"
+}
